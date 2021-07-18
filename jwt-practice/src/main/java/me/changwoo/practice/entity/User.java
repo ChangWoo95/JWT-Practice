@@ -41,6 +41,6 @@ public class User {
             name="user_authority", // jpa가 만들어주는 table 명
             joinColumns = {@JoinColumn(name="user_id", referencedColumnName = "user_id")}, // user table에서 매핑할 정보(컬럼) 지정
             inverseJoinColumns = {@JoinColumn(name="authority_name", referencedColumnName = "authority_name")}) // authority table에서 매핑할 정보(컬럼) 지정
-    private Set<Authority> authoritues;
+    private Set<Authority> authorities;
 
 }
